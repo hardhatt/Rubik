@@ -26,8 +26,7 @@ Turn = function(x){
 	var xx = Rand(3);
 	switch(x){
 		case 0:
-			chara = F(0);
-			console.log(chara);
+			chara = F(Rand(3));
 			break;
 		case 1:
 			chara = B(Rand(3));
@@ -57,24 +56,14 @@ Turn = function(x){
 	return chara;
 }
 
-var option = "",			//記号についてるオプション
-    two = false;			//ふたつめが実行されたか
 
 F = function(n){
 	switch(n){
 		case 0:
-			return "F" + option;
+			return "F";
 		case 1:
-			option = "'";
-			one = true;
-			if(two == false)
-				F(cRand(3, 1));
-			else
-				F(0);
-			break;
+			return "F'";
 		case 2:
-			two = true;
-			option += "2";
-			F(0);
+			return "F2";
 	}
 }
