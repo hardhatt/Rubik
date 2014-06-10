@@ -1,4 +1,4 @@
-/** メイン */
+﻿/** メイン */
 document.getElementById("btn").onclick = function(){
 	var show = [];
 	show[0] = Turn(0);
@@ -63,7 +63,7 @@ var option = "",			//記号についてるオプション
 F = function(op, n){
 	switch(n){
 		case 0:
-			return "F" + option;
+			return "F";// + option;
 		case 1:
 			option = "'";
 			one = true;
