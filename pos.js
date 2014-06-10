@@ -60,10 +60,10 @@ Turn = function(x){
 var option = "",			//記号についてるオプション
     two = false;			//ふたつめが実行されたか
 
-F = function(op, n){
+F = function(n){
 	switch(n){
 		case 0:
-			return "F";// + option;
+			return "F" + option;
 		case 1:
 			option = "'";
 			one = true;
